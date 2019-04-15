@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+Route::get('/', 'PageController@home');
+// chamando o controlador
+Route::get('/home', 'PageController@home');
+Route::get('/sobre', 'PageController@sobre');
+Route::get('/contato', 'PageController@contato');
